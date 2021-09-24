@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "KrishiGruha",
+    "slug": "KrishiGruha",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/krishiicon.png",
+    "splash": {
+      "image": "./assets/splash_image.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/krishiicon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.sagarparker.KrishiGruha"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
