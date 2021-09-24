@@ -1,5 +1,5 @@
 # KrishiGruha
-A platform made for farmers/customers to buy/sell their products online at the best prices using a mobile app created with React native and payments made possible using Hedera Hashgraph ( HBAR ).
+A platform made for users to buy or sell the best agricultural produce online at the best prices using a mobile app created with React native and payments made possible using Hedera Hashgraph ( HBAR ).
 
 <a href="https://hedera.com/">Hedera Hashgraph</a>
 
