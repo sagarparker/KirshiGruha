@@ -100,6 +100,14 @@ router.post('/buyItem',
         console.log("The transfer transaction from my account to the new account was: " + transactionReceipt.status.toString());
 
 
+        if(transactionReceipt.status == false){
+          return res.status(500).json({
+            result:false,
+            msg:"There was an error in hbar transfer"
+          })
+        }
+
+
 
         const details = {
             itemName                :   req.body.itemName,
@@ -199,6 +207,13 @@ router.post('/sellItem',
         //Verify the transaction reached consensus
         const transactionReceipt = await transferTransactionResponse.getReceipt(client);
         console.log("The transfer transaction from my account to the new account was: " + transactionReceipt.status.toString());
+
+        if(transactionReceipt.status == false){
+          return res.status(500).json({
+            result:false,
+            msg:"There was an error in hbar transfer"
+          })
+        }
         
 
         const details = {
