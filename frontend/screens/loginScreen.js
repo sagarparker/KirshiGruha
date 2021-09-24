@@ -19,7 +19,7 @@ const loginScreen = ({navigation}) => {
 
         var config = {
         method: 'post',
-        url: 'https://backendrn.herokuapp.com/api/userLogin',
+        url: ' https://krishigruha.herokuapp.com/api/userLogin',
         headers: { 
             'api_secret_key': 'dfdgh347dfnhh$$%%%%%33657667&%#$^&fdgfhgfhghgh4445yhsb@@@&*', 
             'Content-Type': 'application/json'

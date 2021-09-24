@@ -38,7 +38,7 @@ const buyScreen = ({route,navigation}) => {
 
         var config = {
         method: 'post',
-        url: 'https://backendrn.herokuapp.com/api/buyItem',
+        url: ' https://krishigruha.herokuapp.com/api/buyItem',
         headers: { 
             'api_secret_key': 'dfdgh347dfnhh$$%%%%%33657667&%#$^&fdgfhgfhghgh4445yhsb@@@&*', 
             'Authorization': token, 
@@ -69,7 +69,7 @@ const buyScreen = ({route,navigation}) => {
             <ScrollView style={{flex:1}} keyboardShouldPersistTaps={'handled'}>
             <Image style={styles.itemImage} source={path}/>
             <View style={styles.formContainer}>
-                <Text style={{paddingLeft:10,paddingBottom:10,paddingTop:3}} h4>{item} - Rs.{buyPrice} / kg</Text>
+                <Text style={{paddingLeft:10,paddingBottom:10,paddingTop:3}} h4>{item} - {buyPrice} hbar/kg</Text>
                 <Input placeholder="Quantity in kg" keyboardType="numeric" value={quantity} onChangeText={(e)=> setQuantity(e)}/>
                 <Input placeholder="Your Street location" value={street} onChangeText={(e)=>setStreet(e)}/>
                 <Input placeholder="Your City name" value={city} onChangeText={(e)=>setCity(e)}/>

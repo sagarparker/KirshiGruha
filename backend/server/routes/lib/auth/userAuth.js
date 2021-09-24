@@ -75,7 +75,7 @@ router.post('/userRegister',[
   //Create a new account with 1,000 tinybar starting balance
   const newAccountTransactionResponse = await new AccountCreateTransaction()
       .setKey(newAccountPublicKey)
-      .setInitialBalance(Hbar.fromTinybars(2000000000))
+      .setInitialBalance(Hbar.fromTinybars(3000000000))
       .execute(client);
 
 

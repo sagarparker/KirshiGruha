@@ -10,12 +10,12 @@ const homeScreen = ({navigation}) => {
                 <View style={styles.card}>
                     <Image style={styles.cardImage} source={require('../assets/Tomato.png')}/>
                     <View style={{padding:5}}>
-                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Tomato - Rs.50/kg</Text>
+                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Tomato - 2 HBAR/kg</Text>
                         <View style={{flexDirection:'row',justifyContent:'space-evenly',marginTop:15}}>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Tomato',buyPrice:'50',path:require('../assets/Tomato.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Tomato',buyPrice:2,path:require('../assets/Tomato.png')})}}>
                                 <Text style={styles.buyBtn}>BUY</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Tomato',sellingPrice:'40',path:require('../assets/Tomato.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Tomato',sellingPrice:2,path:require('../assets/Tomato.png')})}}>
                                 <Text style={styles.sellBtn}>SELL</Text>
                             </TouchableOpacity>
                         </View>
@@ -25,12 +25,12 @@ const homeScreen = ({navigation}) => {
                 <View style={styles.card}>
                     <Image style={styles.cardImage} source={require('../assets/Potato.png')}/>
                     <View style={{padding:5}}>
-                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Potato - Rs.30/kg</Text>
+                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Potato - 1 HBAR/kg</Text>
                         <View style={{flexDirection:'row',justifyContent:'space-evenly',marginTop:15}}>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Potato',buyPrice:'30',path:require('../assets/Potato.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Potato',buyPrice:1,path:require('../assets/Potato.png')})}}>
                                 <Text style={styles.buyBtn}>BUY</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Potato',sellingPrice:'20',path:require('../assets/Potato.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Potato',sellingPrice:1,path:require('../assets/Potato.png')})}}>
                                 <Text style={styles.sellBtn}>SELL</Text>
                             </TouchableOpacity>                     
                         </View>
@@ -40,12 +40,12 @@ const homeScreen = ({navigation}) => {
                 <View style={styles.card}>
                     <Image style={styles.cardImage} source={require('../assets/Onions.png')}/>
                     <View style={{padding:5}}>
-                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Onion - Rs.30/kg</Text>
+                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Onion - 1 HBAR/kg</Text>
                         <View style={{flexDirection:'row',justifyContent:'space-evenly',marginTop:15}}>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Onion',buyPrice:'30',path:require('../assets/Onions.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Onion',buyPrice:1,path:require('../assets/Onions.png')})}}>
                                 <Text style={styles.buyBtn}>BUY</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Onion',sellingPrice:'20',path:require('../assets/Onions.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Onion',sellingPrice:1,path:require('../assets/Onions.png')})}}>
                                 <Text style={styles.sellBtn}>SELL</Text>
                             </TouchableOpacity>                
                         </View>
@@ -55,12 +55,12 @@ const homeScreen = ({navigation}) => {
                 <View style={styles.card}>
                     <Image style={styles.cardImage} source={require('../assets/Rice.png')}/>
                     <View style={{padding:5}}>
-                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Rice - Rs.56/kg</Text>
+                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Rice - 2 HBAR/kg</Text>
                         <View style={{flexDirection:'row',justifyContent:'space-evenly',marginTop:15}}>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Rice',buyPrice:'56',path:require('../assets/Rice.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Rice',buyPrice:2,path:require('../assets/Rice.png')})}}>
                                 <Text style={styles.buyBtn}>BUY</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Rice',sellingPrice:'46',path:require('../assets/Rice.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Rice',sellingPrice:2,path:require('../assets/Rice.png')})}}>
                                 <Text style={styles.sellBtn}>SELL</Text>
                             </TouchableOpacity>            
                         </View>
@@ -70,12 +70,12 @@ const homeScreen = ({navigation}) => {
                 <View style={styles.card}>
                     <Image style={styles.cardImage} source={require('../assets/Wheat.png')}/>
                     <View style={{padding:5}}>
-                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Wheat - Rs.35/kg</Text>
+                        <Text style={{fontSize:18,marginTop:15,textAlign:'center',fontFamily:'monospace'}}>Wheat - 1 HBAR/kg</Text>
                         <View style={{flexDirection:'row',justifyContent:'space-evenly',marginTop:15}}>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Wheat',buyPrice:'35',path:require('../assets/Wheat.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('buy',{item:'Wheat',buyPrice:1,path:require('../assets/Wheat.png')})}}>
                                 <Text style={styles.buyBtn}>BUY</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Wheat',sellingPrice:'25',path:require('../assets/Wheat.png')})}}>
+                            <TouchableOpacity onPress={()=>{navigation.navigate('sell',{item:'Wheat',sellingPrice:1,path:require('../assets/Wheat.png')})}}>
                                 <Text style={styles.sellBtn}>SELL</Text>
                             </TouchableOpacity>                
                         </View>

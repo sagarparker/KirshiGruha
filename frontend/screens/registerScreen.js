@@ -34,7 +34,7 @@ const registerScreen = ({navigation}) => {
 
         var config = {
         method: 'post',
-        url: 'https://backendrn.herokuapp.com/api/userRegister',
+        url: ' https://krishigruha.herokuapp.com/api/userRegister',
         headers: { 
             'api_secret_key': 'dfdgh347dfnhh$$%%%%%33657667&%#$^&fdgfhgfhghgh4445yhsb@@@&*', 
             'Content-Type': 'application/json'

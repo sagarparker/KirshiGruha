@@ -10,7 +10,7 @@ const pastOrders = ({navigation}) => {
     function apiCall(token){
         var config = {
             method: 'get',
-            url: 'https://backendrn.herokuapp.com/api/getItemsSold',
+            url: ' https://krishigruha.herokuapp.com/api/getItemsSold',
             headers: { 
               'api_secret_key': 'dfdgh347dfnhh$$%%%%%33657667&%#$^&fdgfhgfhghgh4445yhsb@@@&*', 
               'Authorization': token
@@ -75,7 +75,7 @@ const pastOrders = ({navigation}) => {
                                         <Text style={{color:"green",fontSize:15}}>Date</Text>
                                     </Col>
                                     <Col style={{flexWrap:'wrap'}}>
-                                        <Text style={{fontSize:15}}>:   {order.timestamp}</Text>
+                                        <Text style={{fontSize:15}}>:   {order.timestamp.split(',')[0]}</Text>
                                     </Col>
                                 </Row>
                                 <Row style={{height:37}}>
@@ -91,7 +91,7 @@ const pastOrders = ({navigation}) => {
                                         <Text style={{color:"green",fontSize:15}}>Quantity</Text>
                                     </Col>
                                     <Col>
-                                        <Text style={{fontSize:15}}>:   {order.itemQuantity}/kg</Text>
+                                        <Text style={{fontSize:15}}>:   {order.itemQuantity} kg</Text>
                                     </Col>
                                 </Row>
                                 <Row style={{height:37}}>
@@ -99,7 +99,7 @@ const pastOrders = ({navigation}) => {
                                         <Text style={{color:"green",fontSize:15}}>Item Price</Text>
                                     </Col>
                                     <Col>
-                                        <Text style={{fontSize:15}}>:   Rs.{order.itemPrice}</Text>
+                                        <Text style={{fontSize:15}}>:   {order.itemPrice} hbar</Text>
                                     </Col>
                                 </Row>
                                 <Row style={{height:37}}>
@@ -107,7 +107,7 @@ const pastOrders = ({navigation}) => {
                                         <Text style={{color:"green",fontSize:15}}>Total Price</Text>
                                     </Col>
                                     <Col>
-                                        <Text style={{fontSize:15}}>:   Rs.{order.itemPrice*order.itemQuantity}</Text>
+                                        <Text style={{fontSize:15}}>:   {order.itemPrice*order.itemQuantity} hbar</Text>
                                     </Col>
                                 </Row>
                             </Grid>

@@ -87,11 +87,13 @@ router.post('/buyItem',
         const client = Client.forTestnet();
         client.setOperator(myAccountId, myPrivateKey);
 
+        let transferAmount = req.body.itemPrice * req.body.itemQuantity * 100000000;
+
         //Create the transfer transaction
 
         const transferTransactionResponse = await new TransferTransaction()
-        .addHbarTransfer(myAccountId, Hbar.fromTinybars(-1000))
-        .addHbarTransfer(process.env.MY_ACCOUNT_ID, Hbar.fromTinybars(1000))
+        .addHbarTransfer(myAccountId, Hbar.fromTinybars(-transferAmount))
+        .addHbarTransfer(process.env.MY_ACCOUNT_ID, Hbar.fromTinybars(transferAmount))
         .execute(client);
 
 
@@ -196,11 +198,13 @@ router.post('/sellItem',
         const client = Client.forTestnet();
         client.setOperator(myAccountId, myPrivateKey);
 
+        let transferAmount = req.body.itemPrice * req.body.itemQuantity * 100000000;
+
         //Create the transfer transaction
 
         const transferTransactionResponse = await new TransferTransaction()
-        .addHbarTransfer(myAccountId, Hbar.fromTinybars(-1000))
-        .addHbarTransfer(userAuthData[0].hederaAccountID, Hbar.fromTinybars(1000))
+        .addHbarTransfer(myAccountId, Hbar.fromTinybars(-transferAmount))
+        .addHbarTransfer(userAuthData[0].hederaAccountID, Hbar.fromTinybars(transferAmount))
         .execute(client);
 
 
